@@ -12,7 +12,7 @@ export class ProductService {
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/products`);
+    return this.http.get<any[]>(`${window.location.protocol}//${window.location.hostname}:3000/products`);
   }
 
   placeOrder(order: any): Observable<any> {
