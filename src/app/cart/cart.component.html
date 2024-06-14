@@ -1,0 +1,18 @@
+<div class="cart">
+  <button (click)="logout()" class="logout-button">Logout</button>
+  <div *ngFor="let item of cart" class="cart-item">
+    <img [src]="item.image" alt="{{ item.name }}">
+    <h3>{{ item.name }}</h3>
+    <p>{{ item.price | currency:'INR' }}</p>
+    <div class="quantity">
+      <button (click)="decrementQuantity(item)">-</button>
+      <span>{{ item.quantity }}</span>
+      <button (click)="incrementQuantity(item)">+</button>
+    </div>&nbsp;
+    <button (click)="removeProduct(item)">Remove</button>
+  </div>
+  <div class="total">
+    <h3>Total Price: {{ total | currency:'INR' }}</h3>
+  </div>
+  <button (click)="placeOrder()">Place Order</button>
+</div>

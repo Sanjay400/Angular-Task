@@ -1,0 +1,18 @@
+<div class="order-history">
+  <h2>Order History</h2>
+  <div *ngIf="orders.length > 0; else noOrders">
+    <div *ngFor="let order of orders" class="order">
+      <h3>Order Date: {{ order.date | date:'longDate' }}</h3>
+      <div *ngFor="let item of order.products" class="order-item">
+        <img [src]="item.image" alt="{{ item.name }}">
+        <h4>{{ item.name }}</h4>
+        <p>Price: {{ item.price | currency:'INR' }}</p>
+        <p>Quantity: {{ item.quantity }}</p>
+      </div>
+      <h3>Total Price: {{ order.total | currency:'INR' }}</h3>
+    </div>
+  </div>
+  <ng-template #noOrders>
+    <p>No orders found.</p>
+  </ng-template>
+</div>

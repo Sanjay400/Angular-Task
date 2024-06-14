@@ -1,0 +1,28 @@
+<div>
+  <button (click)="logout()" class="logout-button">Logout</button>
+
+  <h1>Product List</h1>
+  <div>
+    <label for="category">Filter by Category:</label>
+    <select id="category" (change)="onCategoryChange($event)">
+      <option value="">All</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Home Kitchen">Home & Kitchen</option>
+      <option value="Sports">Sports</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+    </select>
+  </div>
+  <div class="product-list">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <img [src]="product.image" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.price | currency:'INR' }}</p>
+      <p>{{ product.category }}</p>
+      <p>{{ product.review }}</p>
+      <p>{{ product.offers }}</p>
+      <button class="buy-button" (click)="buyNow(product)">Buy Now</button>&nbsp;
+      <button class="cart-button" (click)="addToCart(product)">Add to Cart</button>
+    </div>
+  </div>
+</div>

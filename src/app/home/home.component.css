@@ -1,0 +1,33 @@
+body{
+  background-image: url("online-shop-digital.jpeg");
+  background-size: cover; /* Ensures the background image covers the entire screen */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center center; /* Centers the image on the screen */
+  background-attachment: fixed; /* Ensures the background image stays fixed during scrolling */
+  height: 95vh; /* Ensures the body takes up the full viewport height */
+  margin: 0; /* Removes default body margin */
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    color: rgb(231, 14, 14);
+   }
+
+
+  
+  .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
