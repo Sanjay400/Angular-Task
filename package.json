@@ -2,9 +2,10 @@
   "name": "online-shopping",
   "version": "0.0.0",
   "scripts": {
-    "server": "json-server --watch db.json --port 3000",
-    "ng": "ng",
-    "start": "concurrently \"json-server --watch db.json --port 3000\" \"ng serve\"",
+   "ng": "ng",
+    "start": "concurrently \"npm run serve:app\" \"npm run serve:json\"",
+    "serve:app": "ng serve",
+    "serve:json": "json-server --watch src/db.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
