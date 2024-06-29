@@ -17,4 +17,14 @@ export class OrderService {
   getOrderHistory(email: string): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}?email=${email}`);
   }
+
+  cancelProduct(orderId: number, productId: number): Observable<any> {
+    const url = `${this.apiUrl}/${orderId}/products/${productId}`;
+    return this.http.delete(url);
+  }
+
+  cancelOrder(orderId: number): Observable<any> {
+    const url = `${this.apiUrl}/${orderId}`;
+    return this.http.delete(url);
+  }
 }

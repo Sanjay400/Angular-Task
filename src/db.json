@@ -137,104 +137,22 @@
   ],
   "orders": [
     {
+      "id": "b5a4",
       "products": [
         {
-          "id": 1,
-          "name": "Redmi Note 8",
+          "id": "6",
+          "name": "Samsung Galaxy A05s",
           "category": "Electronics",
-          "price": 12000,
+          "price": 15000,
           "review": "Good product",
           "offers": "10% off",
-          "image": "./assets/image/image1.jpeg",
+          "image": "./assets/image/image6.jpeg",
           "quantity": 1
         }
       ],
-      "total": 12000,
+      "total": 15000,
       "email": "sanjeev@gmail.com",
-      "date": "2024-05-30T05:58:55.067Z",
-      "id": "2"
-    },
-    {
-      "products": [
-        {
-          "id": 3,
-          "name": "Spoon",
-          "category": "Home & Kitchen",
-          "price": 199.99,
-          "review": "Excellent value",
-          "offers": "15% off",
-          "image": "./assets/image/image3.jpg",
-          "quantity": 1
-        }
-      ],
-      "total": 199.99,
-      "email": "sanjeev@gmail.com",
-      "date": "2024-05-30T06:00:02.146Z",
-      "id": "3"
-    },
-    {
-      "products": [
-        {
-          "id": 1,
-          "name": "Redmi Note 8",
-          "category": "Electronics",
-          "price": 12000,
-          "review": "Good product",
-          "offers": "10% off",
-          "image": "./assets/image/image1.jpeg",
-          "quantity": 3
-        }
-      ],
-      "total": 36000,
-      "email": "sanjeev@gmail.com",
-      "date": "2024-05-30T06:01:04.658Z",
-      "id": "4"
-    },
-    {
-      "products": [
-        {
-          "id": 4,
-          "name": "Cricket Bat",
-          "category": "Sports",
-          "price": 149.99,
-          "review": "Top-notch performance",
-          "offers": "No offers",
-          "image": "./assets/image/image4.jpeg",
-          "quantity": 1
-        }
-      ],
-      "total": 149.99,
-      "email": "sanjeev@gmail.com",
-      "date": "2024-05-30T06:23:52.856Z",
-      "id": "5"
-    },
-    {
-      "products": [
-        {
-          "id": 2,
-          "name": "MakeUp-Product Combo",
-          "category": "Fashion",
-          "price": 100,
-          "review": "Great quality",
-          "offers": "20% off",
-          "image": "./assets/image/image2.jpeg",
-          "quantity": 1
-        },
-        {
-          "id": 4,
-          "name": "Cricket Bat",
-          "category": "Sports",
-          "price": 149.99,
-          "review": "Top-notch performance",
-          "offers": "No offers",
-          "image": "./assets/image/image4.jpeg",
-          "quantity": 1
-        }
-      ],
-      "total": 249.99,
-      "email": "sanjeev@gmail.com",
-      "date": "2024-05-30T06:24:39.990Z",
-      "id": "6"
+      "date": "2024-06-26T04:30:55.939Z"
     }
   ]
 }

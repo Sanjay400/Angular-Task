@@ -1,17 +1,24 @@
+<button (click)="logout()" class="logout-button">Logout</button>
+
 <div class="order-history">
   <h2>Order History</h2>
+
   <div *ngIf="orders.length > 0; else noOrders">
     <div *ngFor="let order of orders" class="order">
       <h3>Order Date: {{ order.date | date:'longDate' }}</h3>
+      <h3>Delivery Date: {{ order.deliveryDate | date:'longDate' }}</h3>
       <div *ngFor="let item of order.products" class="order-item">
         <img [src]="item.image" alt="{{ item.name }}">
-        <h4>{{ item.name }}</h4>
-        <p>Price: {{ item.price | currency:'INR' }}</p>
+        <h4>{{ item.name }}</h4>&nbsp;
+        <p>Price: {{ item.price | currency:'INR' }}</p>&nbsp;
         <p>Quantity: {{ item.quantity }}</p>
+        <!-- <button (click)="cancelProduct(order.id, item.id)">Cancel Product</button> -->
       </div>
       <h3>Total Price: {{ order.total | currency:'INR' }}</h3>
+      <button (click)="cancelOrder(order.id)">Cancel Order</button>
     </div>
   </div>
+
   <ng-template #noOrders>
     <p>No orders found.</p>
   </ng-template>

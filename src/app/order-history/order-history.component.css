@@ -1,21 +1,43 @@
 .order-history {
-    margin: 20px;
-  }
-  
-  .order {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .order-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .order-item img {
-    max-width: 50px;
-    margin-right: 10px;
-  }
-  
+  margin: 20px;
+}
+
+.order {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-item img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.order-item button {
+  margin-left: 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.order-item button:hover {
+  background-color: #d32f2f;
+}
+
+.logout-button {
+  float: right;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
