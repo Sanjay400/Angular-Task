@@ -2,7 +2,7 @@
   "name": "online-shopping",
   "version": "0.0.0",
   "scripts": {
-   "ng": "ng",
+    "ng": "ng",
     "start": "concurrently \"npm run serve:app\" \"npm run serve:json\"",
     "serve:app": "ng serve",
     "serve:json": "json-server --watch src/db.json",
@@ -39,6 +39,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
     "jasmine-core": "~5.1.0",
     "json-server": "^1.0.0-beta.1",
     "karma": "~6.4.0",

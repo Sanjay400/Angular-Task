@@ -55,7 +55,7 @@
     },
     {
       "id": "2",
-      "name": "MakeUp-Product Combo",
+      "name": "Cooling Glass",
       "category": "Fashion",
       "price": 100,
       "review": "Great quality",
@@ -153,6 +153,24 @@
       "total": 15000,
       "email": "sanjeev@gmail.com",
       "date": "2024-06-26T04:30:55.939Z"
+    },
+    {
+      "id": "7082",
+      "products": [
+        {
+          "id": "3",
+          "name": "Spoon",
+          "category": "Home & Kitchen",
+          "price": 199.99,
+          "review": "Excellent value",
+          "offers": "15% off",
+          "image": "./assets/image/image3.jpg",
+          "quantity": 3
+        }
+      ],
+      "total": 599.97,
+      "email": "sanju@gmail.com",
+      "date": "2024-08-23T07:20:03.523Z"
     }
   ]
 }

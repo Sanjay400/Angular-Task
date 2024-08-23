@@ -10,22 +10,22 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
   loginForm: FormGroup;
-  returnUrl: string;
+  //returnUrl: string;
 
   constructor(private formBuilder: FormBuilder, private authService: AuthService, private router: Router,private route: ActivatedRoute) {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
-    this.returnUrl = '/';
+    //this.returnUrl = '/';
   }
 
-  ngOnInit(): void {
-    // Get the return URL from the route parameters or default to '/'
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-  }
+  // ngOnInit(): void {
+    
+  //   this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+  // }
 
   onSubmit(): void {
     if (this.loginForm.valid) {

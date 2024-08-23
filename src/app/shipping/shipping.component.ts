@@ -55,7 +55,7 @@ export class ShippingComponent implements OnInit {
     };
     this.orderService.placeOrder(order).subscribe(
       () => {
-        this.cartService.clearCart();
+        //this.cartService.clearCart();
         alert('Order placed successfully!');
         this.router.navigate(['/order-history']);
       },
